@@ -20,7 +20,7 @@ const mysqlIntance = mysql.createConnection(obConfing);
  * @method connect 
 */
 mysqlIntance.connect(err => {
-    err ? console.log('Error connecting to the database') :
+    err ? console.log('Error connecting to the database', err) :
         console.log('Database connection successful');
 });
 export { mysqlIntance }; 
