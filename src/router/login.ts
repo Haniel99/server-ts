@@ -11,6 +11,9 @@ const router = Router();
  * @method post  '/login/in'
  * @method post '/login/signup'
  */
+router.get("/", (req, res) => {
+    res.json("Hola mundo");
+} );
 router.post('/head', login_controller_head); //Login for the "Ricardo validivia"
 router.post('/rector', login_controller_rector); //Login for the "Ricardo validivia"
 router.post('/professor', login_controller_professor); //Login for the professor 
