@@ -8,11 +8,6 @@ const app = express();
 app.use(cors());
 app.use(json());
 app.use(router);
-app.get("/", (req: Request, res: Response) => {
-    res.json(
-    "Hola mundo"
-    );
-})
 
 app.listen(PORT, () => {
     console.log(`The server is running on port: ${PORT}`);
