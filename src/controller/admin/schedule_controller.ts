@@ -1,4 +1,4 @@
-import { Response, response } from "express";
+import { Response } from "express";
 import { request } from "../../interface/request_interface";
 import {
   create_semesters,
@@ -127,7 +127,6 @@ const create_class_block_controller = async (req: request, res: Response) => {
   try {
     // Get data from request body
     const { data } = req.body;
-    console.log(data);
     const answer_model = await create_class_block_model(data);
     // Return successful response
     return res.status(200).send({
